@@ -44,10 +44,13 @@ def run_alexa():
         song = command.replace('play', '')
         talk('playing ' + song)
         pywhatkit.playonyt(song)
-    elif 'i want to pay' in command:
-            webbrowser.open("http://122.252.249.26:88/Forms/welcomejisu.html", new=1)
-    elif 'result' in command:
-            webbrowser.open("http://jisexams.in/JISEXAMS/StudentServices/frmViewStudentGradeCardResult.aspx", new=1)
+    elif 'Take me' or 'navigate me' in command:
+        if 'fess' or "payment" in command:
+            webbrowser.open(
+                "http://122.252.249.26:88/Forms/welcomejisu.html", new=1)
+        elif 'result' in command:
+            webbrowser.open(
+                "http://jisexams.in/JISEXAMS/StudentServices/frmViewStudentGradeCardResult.aspx", new=1)
     elif 'time' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
