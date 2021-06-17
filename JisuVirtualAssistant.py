@@ -71,7 +71,7 @@ def run_jisu():
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     elif 'thank you' in command:
-        talk('you are most welcome')
+        talk('You are most welcome')
     elif 'joke' in command:
         talk(pyjokes.get_joke())
 
