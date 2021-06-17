@@ -44,7 +44,7 @@ def run_jisu():
         song = command.replace('play', '')
         talk('playing ' + song)
         pywhatkit.playonyt(song)
-    elif 'Take me' or 'navigate me' in command:
+    elif 'Take me' or 'navigate me' or 'direct' in command:
         if 'fess' or "payment" in command:
             webbrowser.open(
                 "http://122.252.249.26:88/Forms/welcomejisu.html", new=1)
@@ -93,7 +93,7 @@ def run_jisu():
             talk('the Mail id of JISU UNIVERSITY is admission@jisuniversity.ac.in  for  Admission related Queries and  info@jisuniversity.ac.in for any Other Queries ')
 
     else:
-        talk('Please say the command again.')
+        talk(' Sorry Did not Get you Please say again.')
 
 
 while True:
