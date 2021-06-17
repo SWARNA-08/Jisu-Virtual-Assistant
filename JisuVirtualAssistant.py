@@ -68,15 +68,13 @@ def run_alexa():
 
     elif 'who' in command:
         if 'saikat maity' in command:
-            talk(
-                'Dr. Saikat Maity is the Head of The Department of Computer Science and Engineering in J I S UNIVERSITY')
+            talk('Dr. Saikat Maity is the Head of The Department of Computer Science and Engineering in J I S UNIVERSITY')
         elif 'kamalika datta' in command:
-            talk('kamlika Datta is a khan ki maggi')
+            talk('Dr. Kamalika Datta is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
         elif 'mainak biswas' in command:
-            talk('Mainak Biswas is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
+            talk('Dr.Mainak Biswas is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
         elif 'indranil sengupta' in command:
             talk('Dr.Indranil Sengupta is the Vice Chancellor of J I S University')
-
     else:
         talk('Please say the command again.')
 
