@@ -51,7 +51,16 @@ def run_alexa():
         elif 'result' in command:
             webbrowser.open(
                 "http://jisexams.in/JISEXAMS/StudentServices/frmViewStudentGradeCardResult.aspx", new=1)
-    elif 'time' in command:
+        elif 'notice' in command:
+            webbrowser.open(
+                "https://www.jisuniversity.ac.in/notice-board.php", new=1)
+        elif 'admission' in command:
+            webbrowser.open(
+                "http://122.252.249.26:148/Forms/frmRegistration.aspx", new=1)
+        elif 'notice' in command:
+            webbrowser.open(
+                "https://www.google.com/maps?saddr=My+Location&daddr=JIS+UNIVERSITY,+Jis+University,+Nilgunj+Road,+Jagarata+Pally,+Deshpriya+Nagar,+Agarpara,+Kolkata,+West+Bengal", new=1)
+    elif 'JIS UNIVERSITY' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
     elif 'who the heck is' in command:
