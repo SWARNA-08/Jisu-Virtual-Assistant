@@ -37,7 +37,7 @@ def take_command():
     return command
 
 
-def run_alexa():
+def run_jisu():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -57,10 +57,10 @@ def run_alexa():
         elif 'admission' in command:
             webbrowser.open(
                 "http://122.252.249.26:148/Forms/frmRegistration.aspx", new=1)
-        elif 'notice' in command:
+        elif 'JIS UNIVERSITY' in command:
             webbrowser.open(
                 "https://www.google.com/maps?saddr=My+Location&daddr=JIS+UNIVERSITY,+Jis+University,+Nilgunj+Road,+Jagarata+Pally,+Deshpriya+Nagar,+Agarpara,+Kolkata,+West+Bengal", new=1)
-    elif 'JIS UNIVERSITY' in command:
+    elif 'time' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
     elif 'who the heck is' in command:
@@ -82,11 +82,18 @@ def run_alexa():
             talk('Dr. Kamalika Datta is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
         elif 'mainak biswas' in command:
             talk('Dr.Mainak Biswas is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
+        elif 'Nilanjan Day' in command:
+            talk('Dr. Nilanjan Dey is a Asosiate Professor Of Department of Computer Science in J I S UNIVERSITY')
         elif 'indranil sengupta' in command:
             talk('Dr.Indranil Sengupta is the Vice Chancellor of J I S University')
+    elif 'what' in command:
+        if 'address' in command:
+            talk('The Address of JIS UNIVERSITY is Agarpara Campus, Kolkata 81,Nilgunj Road,Agarpara, Kolkata-700109.')
+        id 'mail' in command:
+            talk('the Mail id of JISU UNIVERSITY is  info@jisuniversity.ac.in ')
     else:
         talk('Please say the command again.')
 
 
 while True:
-    run_alexa()
+    run_jisu()
