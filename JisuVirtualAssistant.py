@@ -91,7 +91,6 @@ def run_jisu():
             talk('The Address of JIS UNIVERSITY is Agarpara Campus, Kolkata 81,Nilgunj Road,Agarpara, Kolkata-700109.')
         if 'mail' in command:
             talk('the Mail id of JISU UNIVERSITY is admission@jisuniversity.ac.in  for  Admission related Queries and  info@jisuniversity.ac.in for any Other Queries ')
-
     else:
         talk(' Sorry Did not Get you Please say again.')
 
